@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//estrutura de uma lista
-typedef struct Node{
+
+typedef struct Node List;
+
+struct Node {
     int data;
-    struct node* next;
-}List;
+    List* next; 
+};
 
 //Uma lista vazia é um ponteiro para NULL
 List* create(){
